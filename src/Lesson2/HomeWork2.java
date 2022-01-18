@@ -9,7 +9,7 @@ public class HomeWork2 {
 
         missionThree(1);
 
-        stringNumder();
+        stringNumder("Строка", 10);
     }
 
 
@@ -54,12 +54,10 @@ public class HomeWork2 {
     /*4. Написать метод, которому в качестве аргументов передается строка и число,
     метод должен отпечатать в консоль указанную строку, указанное количество раз;*/
 
-    public static void stringNumder() {
-        String g = "Строка ";
-        for (int f = 0; f < 5; f++) {
+    public static void stringNumder(String str, int j) {
 
-            System.out.println(g + f);
+        for (int f = 0; f < j; f++) {
+            System.out.println(str);
         }
     }
-
 }
