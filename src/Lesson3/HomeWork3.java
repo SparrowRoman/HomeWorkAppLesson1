@@ -9,12 +9,16 @@ public class HomeWork3 {
         fillUpDo();
         arrayLessSix();
 
+        mission5(5, 3);
+
+
         /*
 4. Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
 * и с помощью цикла(-ов) заполнить его диагональные элементы единицами
 * (можно только одну из диагоналей, если обе сложно). Определить элементы одной из диагоналей
 * можно по следующему принципу: индексы таких элементов равны, то есть [0][0], [1][1], [2][2], …, [n][n];
 */
+        System.out.println();
 
         int[][] array4 = new int[5][5];
         array4[0][0] = 1;
@@ -30,7 +34,6 @@ public class HomeWork3 {
         }
 
     }
-
 
 
     /* 1. Задать целочисленный массив, состоящий из элементов 0 и 1.
@@ -75,11 +78,22 @@ public class HomeWork3 {
         System.out.println();
 
 
-
-
-
-
     }
+
+  static int mission5(int len, int initialValue) {
+      int[] array5 = new int[len];
+      array5[len-1] = initialValue;
+      array5[len-2] = initialValue;
+      array5[len-3] = initialValue;
+      array5[len-4] = initialValue;
+      array5[len-len] = initialValue;
+      for (int i = 0; i < array5.length; i++) {
+          System.out.println(array5[i]);
+      }
+      return array5[initialValue];
+  }
+
+
 
 }
 
