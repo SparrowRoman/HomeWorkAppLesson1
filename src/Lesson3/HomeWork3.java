@@ -80,17 +80,13 @@ public class HomeWork3 {
 
     }
 
-  static int mission5(int len, int initialValue) {
+  public static int [] mission5(int len, int initialValue) {
       int[] array5 = new int[len];
-      array5[len-1] = initialValue;
-      array5[len-2] = initialValue;
-      array5[len-3] = initialValue;
-      array5[len-4] = initialValue;
-      array5[len-len] = initialValue;
       for (int i = 0; i < array5.length; i++) {
+          array5[i] = initialValue;
           System.out.println(array5[i]);
       }
-      return array5[initialValue];
+      return array5;
   }
 
 
